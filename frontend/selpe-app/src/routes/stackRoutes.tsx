@@ -5,6 +5,7 @@ import {
 import RegisterPage from '../screens/register/registerPage';
 import LoginPage from '../screens/login/loginPage';
 import ProfilePage from '../screens/profile/profilePage';
+import ConsumoEletroPage from '../screens/consumosEletro/ConsumoEletroPage';
 
 const { Screen, Navigator } = createNativeStackNavigator();
 
@@ -25,6 +26,7 @@ export default function StackRoutes() {
         component={ProfilePage}
         initialParams={{ id: 0, email: '', name: '' }}
       ></Screen>
+      <Screen name="ConsumosEletro" component={ConsumoEletroPage}></Screen>
     </Navigator>
   );
 }
